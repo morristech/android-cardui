@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardRootSV" >
+
+    <LinearLayout style="@style/CardRootLL" >
+
+        <LinearLayout style="@style/CardBodyLL" >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:text="About this App"
+                style="@style/CardTitle" />
+
+            <View style="@style/CardHR" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvMarketLink"
+                    android:layout_gravity="center_vertical"
+                    android:text="PlayStore:"
+                    style="@style/CardTextNormal" />
+
+                <ImageView
+                    android:id="@+id/ivAppIcon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_launcher" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAboutApp"
+                android:text="@string/lorem"
+                style="@style/CardTextNormal" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CardBodyLL" >
+
+            <TextView
+                android:text="About me"
+                style="@style/CardTitle" />
+
+            <View style="@style/CardHR" />
+
+            <LinearLayout
+                android:layout_height="128dp"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/logo_uvwxy" />
+            </LinearLayout>
+
+            <TextView
+                android:text="@string/about_uvwxy"
+                style="@style/CardTextNormal" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvMailLink"
+                    android:layout_gravity="center_vertical"
+                    android:text="Mail:"
+                    style="@style/CardTextNormal" />
+
+                <ImageView
+                    android:id="@+id/ivMailLink"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_mail" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

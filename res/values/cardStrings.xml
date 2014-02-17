@@ -1,5 +1,7 @@
 <resources>
 
     <string name="app_name">Android_CardStyle</string>
+    <string name="about_uvwxy">I develop apps in my spare time. If you like them rate them. If they crash send me a mail, or upload a bug report.</string>
+    <string name="lorem">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</string>
 
 </resources>
