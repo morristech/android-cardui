@@ -7,7 +7,7 @@
 
             <TextView
                 android:id="@+id/tvTitle"
-                android:text="About this App"
+                android:text="@string/about_this_app"
                 style="@style/CardTitle" />
 
             <View style="@style/CardHR" />
@@ -25,7 +25,7 @@
                 <TextView
                     android:id="@+id/tvMarketLink"
                     android:layout_gravity="center_vertical"
-                    android:text="Please Rate this App if you like it:"
+                    android:text="@string/please_rate_this_app_if_you_like_it_"
                     style="@style/CardTextNormal" />
 
                 <ImageView
@@ -39,7 +39,7 @@
         <LinearLayout style="@style/CardBodyLL" >
 
             <TextView
-                android:text="About me"
+                android:text="@string/about_me"
                 style="@style/CardTitle" />
 
             <View style="@style/CardHR" />
@@ -68,7 +68,7 @@
                 <TextView
                     android:id="@+id/tvMailLink"
                     android:layout_gravity="center_vertical"
-                    android:text="Contact:"
+                    android:text="@string/contact_"
                     style="@style/CardTextNormal" />
 
                 <ImageView
@@ -89,7 +89,7 @@
 
             <TextView
                 android:id="@+id/tvLicenses"
-                android:text="Open Source Licenses"
+                android:text="@string/open_source_licenses"
                 style="@style/CardTitle" />
 
             <View style="@style/CardHR" />
@@ -99,7 +99,6 @@
                 android:text="@string/license_explanation"
                 style="@style/CardTextNormal" />
 
-            <View style="@style/CardHR" />
         </LinearLayout>
     </LinearLayout>
 
