@@ -1,7 +1,8 @@
 <resources>
 
     <string name="app_name">Android_CardStyle</string>
-    <string name="about_uvwxy">I develop apps in my spare time. If you like them rate them. If they crash send me a mail, or upload a bug report.</string>
+    <string name="about_uvwxy">I develop apps in my spare time. If you like them rate them ;). If they crash send me a mail, or upload a bug report, so I can fix it and no one else has to run in to the same bug..</string>
     <string name="lorem">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</string>
+    <string name="license_explanation">This app makes use of the following open source projects/libraries:</string>
 
 </resources>

@@ -6,4 +6,7 @@
   <uses-sdk
     android:minSdkVersion="8"
     android:targetSdkVersion="18"/>
+  <application>
+      <activity android:name="de.uvwxy.cardpager.ActivityLicenseDisplay"></activity>
+  </application>
 </manifest>

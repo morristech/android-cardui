@@ -12,6 +12,11 @@
 
             <View style="@style/CardHR" />
 
+            <TextView
+                android:id="@+id/tvAboutApp"
+                android:text="@string/lorem"
+                style="@style/CardTextNormal" />
+
             <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
@@ -20,7 +25,7 @@
                 <TextView
                     android:id="@+id/tvMarketLink"
                     android:layout_gravity="center_vertical"
-                    android:text="PlayStore:"
+                    android:text="Please Rate this App if you like it:"
                     style="@style/CardTextNormal" />
 
                 <ImageView
@@ -29,11 +34,6 @@
                     android:layout_width="wrap_content"
                     android:src="@drawable/ic_launcher" />
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/tvAboutApp"
-                android:text="@string/lorem"
-                style="@style/CardTextNormal" />
         </LinearLayout>
 
         <LinearLayout style="@style/CardBodyLL" >
@@ -68,7 +68,7 @@
                 <TextView
                     android:id="@+id/tvMailLink"
                     android:layout_gravity="center_vertical"
-                    android:text="Mail:"
+                    android:text="Contact:"
                     style="@style/CardTextNormal" />
 
                 <ImageView
@@ -76,7 +76,30 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:src="@drawable/ic_mail" />
+
+                <ImageView
+                    android:id="@+id/ivWwwLink"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_www" />
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/CardBodyLL" android:id="@+id/llLicenses" >
+
+            <TextView
+                android:id="@+id/tvLicenses"
+                android:text="Open Source Licenses"
+                style="@style/CardTitle" />
+
+            <View style="@style/CardHR" />
+
+            <TextView
+                android:id="@+id/tvLicenseExplanation"
+                android:text="@string/license_explanation"
+                style="@style/CardTextNormal" />
+
+            <View style="@style/CardHR" />
         </LinearLayout>
     </LinearLayout>
 
