@@ -17,23 +17,18 @@
                 android:text="@string/lorem"
                 style="@style/CardTextNormal" />
 
-            <LinearLayout
+            <View style="@style/CardHR" />
+
+            <TextView
+                android:id="@+id/tvMarketLink"
+                android:text="@string/please_rate_this_app_if_you_like_it_"
+                style="@style/CardTextNormal" />
+
+            <ImageView
+                android:id="@+id/ivAppIcon"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:orientation="horizontal" >
+                android:layout_width="wrap_content" />
 
-                <TextView
-                    android:id="@+id/tvMarketLink"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/please_rate_this_app_if_you_like_it_"
-                    style="@style/CardTextNormal" />
-
-                <ImageView
-                    android:id="@+id/ivAppIcon"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_www" />
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout style="@style/CardBodyLL" >
@@ -60,29 +55,24 @@
                 android:text="@string/about_uvwxy"
                 style="@style/CardTextNormal" />
 
-            <LinearLayout
+            <View style="@style/CardHR" />
+
+            <TextView
+                android:id="@+id/tvMailLink"
+                android:text="@string/contact_"
+                style="@style/CardTextNormal" />
+
+            <ImageView
+                android:id="@+id/ivMailLink"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:orientation="horizontal" >
+                android:src="@drawable/ic_mail" />
 
-                <TextView
-                    android:id="@+id/tvMailLink"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/contact_"
-                    style="@style/CardTextNormal" />
-
-                <ImageView
-                    android:id="@+id/ivMailLink"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_mail" />
-
-                <ImageView
-                    android:id="@+id/ivWwwLink"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_www" />
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/ivWwwLink"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_www" />
         </LinearLayout>
 
         <LinearLayout style="@style/CardBodyLL" android:id="@+id/llLicenses" >
