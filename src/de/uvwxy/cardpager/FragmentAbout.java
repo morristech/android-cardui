@@ -17,6 +17,14 @@ import de.uvwxy.helper.BitmapTools;
 import de.uvwxy.helper.IntentTools;
 
 public class FragmentAbout extends Fragment {
+	ImageView ivLogo;
+	ImageView ivAppIcon;
+	ImageView ivWwwLink;
+	ImageView ivMailLink;
+	TextView tvTitle;
+	TextView tvAboutApp;
+	TextView tvLicenseExplanation;
+	LinearLayout llLicenses;
 
 	private String mTitle;
 	private String mAboutApp;
@@ -88,16 +96,17 @@ public class FragmentAbout extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_about, container, false);
-		TextView tvTitle = (TextView) rootView.findViewById(R.id.tvTitle);
-		TextView tvAboutApp = (TextView) rootView.findViewById(R.id.tvAboutApp);
-		TextView tvLicenseExplanation = (TextView) rootView.findViewById(R.id.tvLicenseExplanation);
 
-		LinearLayout llLicenses = (LinearLayout) rootView.findViewById(R.id.llLicenses);
+		tvTitle = (TextView) rootView.findViewById(R.id.tvTitle);
+		tvAboutApp = (TextView) rootView.findViewById(R.id.tvAboutApp);
+		tvLicenseExplanation = (TextView) rootView.findViewById(R.id.tvLicenseExplanation);
 
-		ImageView ivLogo = (ImageView) rootView.findViewById(R.id.ivLogo);
-		ImageView ivAppIcon = (ImageView) rootView.findViewById(R.id.ivAppIcon);
-		ImageView ivWwwLink = (ImageView) rootView.findViewById(R.id.ivWwwLink);
-		ImageView ivMailLink = (ImageView) rootView.findViewById(R.id.ivMailLink);
+		llLicenses = (LinearLayout) rootView.findViewById(R.id.llLicenses);
+
+		ivLogo = (ImageView) rootView.findViewById(R.id.ivLogo);
+		ivAppIcon = (ImageView) rootView.findViewById(R.id.ivAppIcon);
+		ivWwwLink = (ImageView) rootView.findViewById(R.id.ivWwwLink);
+		ivMailLink = (ImageView) rootView.findViewById(R.id.ivMailLink);
 
 		tvAboutApp.setText(mAboutApp);
 		tvTitle.setText(mTitle);
@@ -134,23 +143,24 @@ public class FragmentAbout extends Fragment {
 			}
 		});
 
-		for (final String key : mLicenses) {
-			TextView v = new TextView(getActivity());
-			v.setLayoutParams(tvLicenseExplanation.getLayoutParams());
-			v.setText(ActivityLicenseDisplay.licenseName.get(key));
-			v.setOnClickListener(new OnClickListener() {
+		if (mLicenses != null) {
+			for (final String key : mLicenses) {
+				TextView v = new TextView(getActivity());
+				v.setLayoutParams(tvLicenseExplanation.getLayoutParams());
+				v.setText(ActivityLicenseDisplay.licenseName.get(key));
+				v.setOnClickListener(new OnClickListener() {
 
-				@Override
-				public void onClick(View arg0) {
-					Intent i = new Intent(getActivity().getApplicationContext(), ActivityLicenseDisplay.class);
-					i.putExtra(ActivityLicenseDisplay.LICENSE_KEY, key);
-					startActivity(i);
-				}
-			});
-			llLicenses.addView(v);
+					@Override
+					public void onClick(View arg0) {
+						Intent i = new Intent(getActivity().getApplicationContext(), ActivityLicenseDisplay.class);
+						i.putExtra(ActivityLicenseDisplay.LICENSE_KEY, key);
+						startActivity(i);
+					}
+				});
+				llLicenses.addView(v);
+			}
 		}
 
 		return rootView;
 	}
-
 }

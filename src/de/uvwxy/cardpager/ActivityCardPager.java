@@ -26,8 +26,14 @@ public abstract class ActivityCardPager extends FragmentActivity {
 		mViewPager = (ViewPager) findViewById(R.id.pager);
 		mViewPager.setAdapter(mSectionsPagerAdapter);
 	}
-	
-	public Context ctx(){
+
+	public void moveToTab(int i) {
+		if (i >= 0 && i < getFragmentCount() && mViewPager != null) {
+			mViewPager.setCurrentItem(i);
+		}
+	}
+
+	public Context ctx() {
 		return this;
 	}
 

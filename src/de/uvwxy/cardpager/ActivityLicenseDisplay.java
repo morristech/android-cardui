@@ -22,6 +22,8 @@ public class ActivityLicenseDisplay extends Activity {
 		licenseName.put("protobuf", "Google Protocol Buffers");
 		availableLicenses.put("guava", "file:///android_asset/apachev2.html");
 		licenseName.put("guava", "Google Guava");
+		availableLicenses.put("lombok", "file:///android_asset/lombok.html");
+		licenseName.put("lombok", "Project Lombok");
 	}
 
 	@Override
