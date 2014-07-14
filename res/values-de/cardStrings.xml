@@ -1,11 +1,11 @@
 <resources>
 
-    <string name="about_uvwxy">Ich entwickle Apps in meiner Freizeit. Falls sie dir gefallen, bewerte sie ;). Falls die App mal abstürtzt, schick mir einfach eine mail, oder lade den Crash-Report hoch. Nur so kann ich die Fehler beheben und vermeiden, dass noch weitere den selben Fehler finden..</string>
+    <string name="about_uvwxy">Ich entwickle Apps in meiner Freizeit. Falls sie dir gefallen, bewerte sie ;). Falls die App mal abstürtzt, schick mir einfach eine mail, oder lade den Crash-Report hoch. So kann ich die Fehler beheben und vermeiden, dass noch weitere denselben Fehler finden..</string>
     <string name="lorem">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</string>
     <string name="license_explanation">Diese App verwendet die folgenden Open Source Projekte/Libraries:</string>
     <string name="open_source_licenses">Open Source Lizenzen</string>
     <string name="contact_">Kontakt:</string>
     <string name="about_me">Über mich</string>
     <string name="about_this_app">Über diese App</string>
-    <string name="please_rate_this_app_if_you_like_it_">Bewerte diese App wenn sie dir gefällt:</string>
+    <string name="please_rate_this_app_if_you_like_it_">Bewerte diese App:</string>
 </resources>
